@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrity Home Innovation LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0b1c36;
+      --accent: #4f8aff;
+      --light-bg: #f4f7fa;
+      --text-dark: #0b1c36;
+      --text-light: #ffffff;
+      --radius: 1.25rem;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: var(--text-light);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.75;
+    }
+    .hero {
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+      background: linear-gradient(135deg, #e6ecf2, #ffffff);
+      clip-path: ellipse(140% 100% at 50% 0%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 700px;
+      margin: 0 auto 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 0.8rem 1.8rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .feature {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-6px);
+    }
+    .feature h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .feature p {
+      font-size: 1rem;
+      color: #444;
+    }
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-top: 5rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-cd24-622f-a9da-083a81630e4d/raw" alt="Integrity Home Innovation logo" />
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#book">Book Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>We Mount TVs Like We Built the Walls Ourselves.</h1>
+    <p>PA Registered. Fully Insured. Ridiculously qualified. Your TV’s about to live its best life.</p>
+    <a href="#book" class="btn">Book Your Mounting</a>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align:center; font-size: 2rem;">Why Choose Us</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Overqualified — and Proud of It</h3>
+        <p>We’re PA Attorney General-Registered contractors, not gig workers. That means cleaner installs, fewer holes, and no “oops.”</p>
+      </div>
+      <div class="feature">
+        <h3>Luxury Apartment Specialists</h3>
+        <p>We get it: you want sleek, not sloppy. We install with care, speed, and serious respect for your walls.</p>
+      </div>
+      <div class="feature">
+        <h3>Fully Licensed & Insured</h3>
+        <p>We're Pennsylvania Attorney General-Registered and fully insured. We take extra care to protect your space and minimize wall impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2 style="text-align:center; font-size: 2rem;">TV Mounting & More — Done Right the First Time</h2>
+    <p style="text-align:center; max-width: 700px; margin: 1rem auto 2rem;">Transparent pricing. No upsells. No “I didn’t know it cost extra to drill into brick.”</p>
+    <h3>TV Mounting Packages</h3>
+    <ul>
+      <li><strong>Installation:</strong> $150 flat rate for TVs up to 60" (drywall/plaster/brick). TVs over 60" require either client assistance for lifting or a $75 surcharge.</li>
+      <li><strong>Mount Options (we provide):</strong>
+        <ul>
+          <li>Flat mount – $25</li>
+          <li>Tilting mount – $50</li>
+          <li>Full motion mount – $75</li>
+        </ul>
+      </li>
+      <li><em>Already have your own mount? We’ll install it at no extra charge.</em></li>
+    </ul>
+    <h3>Popular Add-Ons</h3>
+    <ul>
+      <li>Wire Concealment — starting at $40</li>
+      <li>Soundbar Installation — $40 (when bundled with TV mounting)</li>
+      <li>Mount Removal & Wall Repair — $30 and up</li>
+      <li>Shelf or Smart Device Mounting — $25–50</li>
+    </ul>
+    <h3>Service Area</h3>
+    <p>We currently serve <strong>Pittsburgh and surrounding neighborhoods</strong>. Not sure if you're in range? <a href="#contact">Contact us</a> or DM us on Instagram.</p>
+  </section>
+
+  <section id="book" class="section" style="text-align:center;">
+    <h2 style="font-size: 2rem;">Let’s Get That TV Off the Floor.</h2>
+    <p>Use our simple form to schedule an appointment. We'll handle the rest.</p>
+    <p><a class="btn" href="https://forms.gle/YOUR_GOOGLE_FORM" target="_blank">Book Now</a></p>
+  </section>
+
+  <section id="contact" class="section" style="text-align:center;">
+    <h2 style="font-size: 2rem;">See Our Work in Action</h2>
+    <p>Follow us on Instagram: <a href="https://instagram.com/YOUR_HANDLE" target="_blank">@integrityhomeinnovation</a></p>
+  </section>
+
+  <footer>
+    <p>Integrity Home Innovation LLC | Serving the Greater Pittsburgh Area</p>
+    <p>Pennsylvania Attorney General-Registered & Fully Insured | PA 201279</p>
+    <p>&copy; 2025 Integrity Home Innovation LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
